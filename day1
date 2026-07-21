@@ -41,7 +41,7 @@ class Solution {
 }
 
 Problem no : 3
-Problem:
+Problem:Longest Substring Without Repeating Characters
 Solution:
 class Solution {
     public int lengthOfLongestSubstring(String s) {
