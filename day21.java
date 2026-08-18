@@ -35,3 +35,38 @@ class Solution {
         return count;
     }
 }
+
+Problem No:1550
+Problem:Three Consecutive Odds
+Solution:
+class Solution {
+    public boolean threeConsecutiveOdds(int[] arr) {
+       for (int i = 0; i < arr.length - 2; i++) {
+            if (arr[i] % 2 != 0 &&
+                arr[i + 1] % 2 != 0 &&
+                arr[i + 2] % 2 != 0) {
+                return true;
+            }
+        }
+        return false; 
+    }
+}
+
+Problem No:1588
+Problem:Sum of All Odd Length Subarrays
+Solution:
+class Solution {
+    public int sumOddLengthSubarrays(int[] arr) {
+        int total = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            for (int j = i; j < arr.length; j++) {
+                sum += arr[j];
+                if ((j - i + 1) % 2 == 1) {
+                    total += sum;
+                }
+            }
+        }
+        return total;
+    }
+}
