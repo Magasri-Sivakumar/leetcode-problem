@@ -82,3 +82,13 @@ class Solution {
         return dp[target];
     }
 }
+
+Problem No:215
+Problem:Kth Largest Element in an Array
+Solution:
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[nums.length - k];
+    }
+}
